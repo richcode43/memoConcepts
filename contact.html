@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="stylesheet/style.css">
     <title>Document</title>
 </head>
@@ -29,17 +30,106 @@
             </p>
         </div>
     </header>
-    <section class="form_holder">
+    <section class="contact_section">
         <div class="contact_form">
             <form action="#">
-
+                <div class="form_inputs">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" placeholder="your first name">
+                </div>
+                <div class="form_inputs">
+                    <label for="lname">First Name</label>
+                    <input type="text" id="lname" placeholder="your last name">
+                </div>
+                <div class="form_inputs">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email@example.com">
+                </div>
+                <div class="form_inputs">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea>
+                </div>
+                <div class="btn_holder">
+                    <button type="btn_holder">send message</button>
+                </div>
             </form>
         </div>
         <div class="contact_details">
+            <h4>contact details</h4>
+            <div class="contact_info">
+                <div class="info_box">
+                    <div class="info_icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="info_content">
+                        <h5>head office</h5>
+                        <p>8819 Ohio St. South Gate, California</p>
+                    </div>
+                </div>
+                <div class="info_box">
+                    <div class="info_icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info_content">
+                        <h5>Our Email</h5>
+                        <p>team@memoconcept.ng</p>
+                    </div>
+                </div>
+                <div class="info_box">
+                    <div class="info_icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="info_content">
+                        <h5>Call Center</h5>
+                        <p>+23481123344</p>
+                    </div>
+                </div>
+            </div>
             
-        </div>
-        
+        </div>   
+    
     </section>
-  
+    <footer class="top_reduce">
+        <div class="footer_container">
+            <div class="footer_item">
+                <h4><a href="index.html">Memo Concept</a></h4>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span>Memo Concept</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <span>team@memoconcept.com</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span>+271 386-647-3637</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">link here</a></li>
+                    <li><a href="#">link here</a></li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="chatbox">
+        <button class="chat_btn" type="button">
+            CHAT
+        </button>
+    </div>
 </body>
 </html>
