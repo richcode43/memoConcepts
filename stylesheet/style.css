@@ -11,6 +11,7 @@ header{
     height: auto;
     width: 100%; 
 }
+
 nav{
     display: flex;
     position: sticky;
@@ -52,6 +53,10 @@ nav{
 .nav_links:hover, .nav_links:active{
     color: blue;
 }
+.mobile_menu{
+    display: none;
+}
+
 
 /* footer section */
 footer{
@@ -107,10 +112,6 @@ footer{
     font-weight: 600;
     font-family:"poppins", sans-serif; 
     padding-top: 5px;
-}
-.chatbox{
-    width: 100%;
-    height: 100%;
 }
 .chat_btn{
     bottom: 50px;
@@ -328,7 +329,6 @@ footer{
 }
 .testimonial_details{
     padding: 10px;
-    height: 75vh;
     margin:10px;
     width: 50%;
     padding-top: 30px;
@@ -436,7 +436,7 @@ footer{
     gap: .5rem;
     padding: 20px;
 }
-.form_inputs label{
+.form_inputs>label{
     font-size: 1rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif; 
     font-weight: 300;
@@ -539,7 +539,56 @@ footer{
     -o-border-radius: 15px;
 }
 /* end of contact page stylesheet */
-
+@media(max-width: 990px){
+    nav{
+        justify-content: space-between;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobile_menu{
+        display: flex;
+        margin: 10px 30px;
+    }
+    .mobile_menu label{
+        display: flex;
+        flex-direction: column;
+        width: 70px;
+        justify-content: center;
+        align-items: center; 
+        margin: 8px 0;
+    }
+    label input{
+        display: none;
+    }
+    .mobile_menu span{
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 3px 0;
+    }
+    .home_heading{
+        width: 60%;
+    }
+    .agent img{
+        height: 100%;
+    }
+    .testimonial_container{
+        flex-direction: column;
+    }
+    .testimonial_details{
+        width: 100%;
+    }
+    .services_details_section{
+        flex-direction: column;
+    }
+    .services_section{
+        flex-direction: column;
+    }
+    .service_item{
+        width: 100%;
+    }
+}
 @media (max-width: 768px){
 
     nav{
@@ -557,6 +606,11 @@ footer{
         right: 20px;
         bottom: 20px;
     }
+    .mobile_menu{
+        width: 40px;
+        cursor: pointer;
+    }
+    
     /* index page */
     .home_heading{
         width: 100%;
